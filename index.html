@@ -6,29 +6,66 @@
         <title>Blog</title>
         <style>
             header{
-                background-color: lightcoral;
+                background-color: rgb(243, 176, 176);
                 color:antiquewhite; 
                 text-align: center; 
                 max-width: 800px;    
                 margin: 0 auto;         
             }
             main{
-                background-color: darksalmon;
-                color:antiquewhite;
+                background-color: rgb(252, 183, 225);
+                color:rgb(206, 106, 167);
                 max-width: 800px;    
                 margin: 0 auto;
+                padding: 16px;
             }
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            img{
+                width: 90px;
+                height: 90px;
+            }
+            p{
+                font-weight: bold;
+            }
+
         </style>
     </head>
     <body>
         <header>    
-            <h1>Meu blog tech</h1>
+            <h1>Meu blog tech‧₊ ᵎᵎ 🍒 ⋅ ˚✮</h1>
             <p>Vou compartilhar conhecimentos sobre tecnologia e progamação.</p>
         </header>
         <Main> 
-            <h2>Meu primeiro post</h2>
-            <p>Por: Kaori.</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de progamação e curiosidades da área de tecnologia.</p>
+            <div>
+            <img src="Akiyama Mizuki.jpeg" alt="logotipo conceitual da personagem Akiyama Mizuki de pjsk, na paleta de cor rosa.">
+            <img src="Mizuki Akiyama Stamps.jpeg" alt="outro logotipo conceitual da mesma personagem, paleta de cores nos tons de rosa, roxo e cinza.">
+            <img src="Mizuki Akiyama.jpeg" alt="logotipo conceitual da Mizuki de pjk, na paleta de cores rosa"
+            <h2>Meu primeiro post. ݁⋆ ۶ৎ ݁˖ . ݁</h2>
+            <p>Por: Kaori.⋆˙⟡</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de progamação e curiosidades da área de tecnologia.*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</p>
+               <button>🎀<span>0</span></button>
+               <button>💖<span>0</span></button>
+               </div>
         </Main>
+
     </body>
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach( function(botao){
+            botao.addEventListener("click", botaoClicado);
+               function botaoClicado(){
+               console.log("fui clicado");
+               let texto = botao.querySelector("span");
+               texto.textContent++;
+            }
+        })
+    
+
+
+
+    </script>
 </html>
